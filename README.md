@@ -31,4 +31,5 @@ Assume that the edges are maximally insulated from their surroundings.
 Your program should graphically display the results by drawing a grid of points with intensities or colors indicating temperature. (Alternatively, you can just output them to a file and use something like gnuplot to display them.)
 
 Acknowledgment: This assignment was adapted from a study by Steve MacDonald.
+
 B. Reimplement using SIMD parallelism, a GPU, or multiple servers.
