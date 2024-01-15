@@ -19,7 +19,7 @@ This is mainly an exercise in performance measurement. Each of the following ste
 A. Consider a rectangular piece of metal alloy, four times as wide as high, consisting of three different metals, each with different thermal characteristics. For each region of the alloy, there is a given amount (expressed in terms of a percentage) of each of the three base metals, that varies up to 25 percent due to random noise. The top left corner (at the mesh element at index [0,0]) is heated at $S$ degrees Celsius and the bottom right corner (index [width - 1,height - 1]) is heated at $T$ degrees Celsius. The temperature at these points may also randomly vary over time.
 Your program calculates the final temperature for each region on the piece of alloy. The new temperature for a given region of the alloy is calculated using the formula 
 
-<img width="403" alt="Screen Shot 2024-01-14 at 10 10 42 PM" src="https://github.com/lljustycell999/CSC375/assets/123667513/056240e0-1ada-43a8-a3f4-b849cdbb8e87">
+<img width="800" alt="Screen Shot 2024-01-14 at 10 10 42 PM" src="https://github.com/lljustycell999/CSC375/assets/123667513/056240e0-1ada-43a8-a3f4-b849cdbb8e87">
 
 
 where $m$ represents each of the three base metals, $C_m$ is the thermal constant for metal $m$, $N$ is the set representing the neighbouring regions, $temp_n$ is the temperature of the neighbouring region, $p^{m}_{n}$ is the percentage of metal $m$ in neighbour $n$, and $\vert N\vert$ is the number of neighbouring regions. This computation is repeated until the temperatures converge to a final value or a reasonable maximum number of iterations is reached.
