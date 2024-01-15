@@ -22,7 +22,10 @@ Your program calculates the final temperature for each region on the piece of al
 
 <img align="center" width="403" alt="Screen Shot 2024-01-14 at 10 10 42 PM" src="https://github.com/lljustycell999/CSC375/assets/123667513/056240e0-1ada-43a8-a3f4-b849cdbb8e87">
 
-where $m$ represents each of the three base metals, $C_m$ is the thermal constant for metal $m$, $N$ is the set representing the neighbouring regions, $temp_n$ is the temperature of the neighbouring region, $p^{m}_{n}$ is the percentage of metal $m$ in neighbour $n$, and $\vert N\vert$ is the number of neighbouring regions. This computation is repeated until the temperatures converge to a final value or a reasonable maximum number of iterations is reached.
+where $m$ represents each of the three base metals, $C_m$ is the thermal constant for metal $m$, $N$ is the set representing the neighbouring regions, $temp_n$ is the temperature of the neighbouring region, $p^{m}_{n}$ is the percentage of metal $m$ in neighbour $n$, and $\vert N\vert$ is the number of neighbouring regions. 
+
+This computation is repeated until the temperatures converge to a final value or a reasonable maximum number of iterations is reached.
+
 The values for $S$, $T$, $C_1$, $C_2$, $C_3$, the dimensions of the mesh, and the threshold should be parameters to the program. Note however, that combinations of these parameters do not do not converge well. Try values of (0.75, 1.0, 1.25) C1, C2, C3 for your test/demo.
 
 Assume that the edges are maximally insulated from their surroundings.
