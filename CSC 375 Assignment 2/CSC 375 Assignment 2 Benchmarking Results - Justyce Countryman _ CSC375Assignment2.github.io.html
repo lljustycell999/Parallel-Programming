@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://lljustycell999.github.io/CSC375Assignment2.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman | CSC375Assignment2.github.io</title>
+<meta name="generator" content="Jekyll v3.9.3">
+<meta property="og:title" content="CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://lljustycell999.github.io/CSC375Assignment2.github.io/">
+<meta property="og:url" content="https://lljustycell999.github.io/CSC375Assignment2.github.io/">
+<meta property="og:site_name" content="CSC375Assignment2.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman","name":"CSC375Assignment2.github.io","url":"https://lljustycell999.github.io/CSC375Assignment2.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman _ CSC375Assignment2.github.io_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/CSC375Assignment2.github.io/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  <script charset="utf-8" src="chrome-extension://oakbcaafbicdddpdlhbchhpblmhefngh/dist/ruffle.js?id=53637120430"></script></head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://lljustycell999.github.io/CSC375Assignment2.github.io/">CSC375Assignment2.github.io</a></h1>
+      
+
+      <h1 id="csc-375-assignment-2-benchmarking-results---justyce-countryman">CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman</h1>
+
+<h2 id="about-this-page"><strong>About this page</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#about-this-page" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>This page will discuss the benchmarking results of running a concurrent program using the Java Microbenchmark Harness (JMH) through two different means, a non-concurrent data structure with a custom-made locking scheme and a concurrent data structure that comes directly from the Java library.</p>
+
+<h2 id="context-of-programming-project"><strong>Context of Programming Project</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#context-of-programming-project" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>The purpose of my project is to generate a random semester schedule of six courses based on a .txt file that (hopefully) contains all SUNY Oswego courses. The courses will be held in either a HashMap with a ReadWriteLock or a ConcurrentHashMap. Each benchmark will use 32 threads and each of those threads will have the same probability of either reading from the data structure six times to create a schedule of six random classes or writing a single new course to the data structure. If the HashMap with the ReadWriteLock method is used, threads will be controlled by acquiring and releasing readLock and writeLock, with data consumption or production occurring in between. If the ConcurrentHashMap is chosen, the reading or writing will happen within a synchronized function instead, which still ensures thread safety.</p>
+
+<h2 id="what-are-the-different-loads"><strong>What are the Different Loads?</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#what-are-the-different-loads" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>For each platform, there will be four charts that represent the benchmarking results of four different loads. The loads are simply four different fixed probabilities that the threads have of reading or writing. The platforms are run from my 2020 13” M1 MacBook Pro with 16GB of RAM and 8 cores (4 performance and 4 efficiency). The platforms include using the Rho server, using the Gee server, and running the program straight from my computer.</p>
+
+<p><strong>Note: Each benchmark uses the default number of forks, warmup iterations, and measurement iterations, which is 5 of each.</strong></p>
+
+<h2 id="load-1--99-reads"><strong>Load 1: ≈ 99% Reads</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#load-1--99-reads" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p><img width="1327" alt="CSC375Load1" src="./CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman _ CSC375Assignment2.github.io_files/2a23a015-401d-46fe-bd10-da8fcff7e52b"></p>
+
+<h2 id="load-2--90-reads"><strong>Load 2: ≈ 90% Reads</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#load-2--90-reads" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p><img width="1330" alt="CSC375Load2" src="./CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman _ CSC375Assignment2.github.io_files/fd58045c-5f27-43ff-8711-6e92e9db9300"></p>
+
+<h2 id="load-3--75-reads"><strong>Load 3: ≈ 75% Reads</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#load-3--75-reads" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p><img width="1333" alt="CSC375Load3" src="./CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman _ CSC375Assignment2.github.io_files/9b08e23c-5edd-4f84-b245-f9131bb1c116"></p>
+
+<h2 id="load-4--50-reads"><strong>Load 4: ≈ 50% Reads</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#load-4--50-reads" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p><img width="1333" alt="CSC375Load4" src="./CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman _ CSC375Assignment2.github.io_files/3d6e4bc8-8363-46e9-9619-deb260ce5bf1"></p>
+
+<h2 id="conclusion"><strong>Conclusion</strong><a class="anchorjs-link " href="https://lljustycell999.github.io/CSC375Assignment2.github.io/#conclusion" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>The recorded data clearly suggests that the ConcurrentHashMap from the Java library is much more likely to perform more operations in a given timeframe than the HashMap with the custom-made ReadWriteLock. In Rho, each test had the ConcurrentHashMap scoring about 10 to 13 times higher than the HashMap with the ReadWriteLock. In Gee, the ConcurrentHashMap still reigned supreme but only scored about 4.5 times higher. Finally, my MacBook Pro gave results that favored the ConcurrentHashMap by about 39 to 47 percent for the first three loads, yet surprisingly the 50/50 split between reads and writes resulted in the ReadWriteLock method winning with about a 13 percent increase in operations per microsecond. It would make sense to take the MacBook Pro benchmarks with a grain of salt anyway due to the potential lack of resources compared to the Rho and Gee servers. Even so, the small performance increase of the ReadWriteLock does not at all balance out the significantly higher speeds of the ConcurrentHashMap throughout the other 11 benchmarks. In the case of making a fast and efficient parallel HashMap, programmers should often consider Java’s ConcurrentHashMap instead of using a sequential HashMap with a custom-made locking scheme, even if they have to miss out on an important topic in parallel computing.</p>
+
+
+      
+    </div>
+    <script src="./CSC 375 Assignment 2 Benchmarking Results - Justyce Countryman _ CSC375Assignment2.github.io_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+</body></html>
