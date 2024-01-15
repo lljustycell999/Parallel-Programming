@@ -20,7 +20,7 @@ A. Consider a rectangular piece of metal alloy, four times as wide as high, cons
 
 Your program calculates the final temperature for each region on the piece of alloy. The new temperature for a given region of the alloy is calculated using the formula 
 
-<img width="403" alt="Screen Shot 2024-01-14 at 10 10 42 PM" src="https://github.com/lljustycell999/CSC375/assets/123667513/056240e0-1ada-43a8-a3f4-b849cdbb8e87">
+<img align="center" width="403" alt="Screen Shot 2024-01-14 at 10 10 42 PM" src="https://github.com/lljustycell999/CSC375/assets/123667513/056240e0-1ada-43a8-a3f4-b849cdbb8e87">
 
 
 where $m$ represents each of the three base metals, $C_m$ is the thermal constant for metal $m$, $N$ is the set representing the neighbouring regions, $temp_n$ is the temperature of the neighbouring region, $p^{m}_{n}$ is the percentage of metal $m$ in neighbour $n$, and $\vert N\vert$ is the number of neighbouring regions. This computation is repeated until the temperatures converge to a final value or a reasonable maximum number of iterations is reached.
