@@ -16,7 +16,7 @@ This is mainly an exercise in performance measurement. Each of the following ste
 * Plot your results as a set of graphs and place on a web page.
 
 # Assignment 3 Specification:
-Part A. Consider a rectangular piece of metal alloy, four times as wide as high, consisting of three different metals, each with different thermal characteristics. For each region of the alloy, there is a given amount (expressed in terms of a percentage) of each of the three base metals, that varies up to 25 percent due to random noise. The top left corner (at the mesh element at index [0,0]) is heated at $S$ degrees Celsius and the bottom right corner (index [width - 1,height - 1]) is heated at $T$ degrees Celsius. The temperature at these points may also randomly vary over time.
+Part A: Consider a rectangular piece of metal alloy, four times as wide as high, consisting of three different metals, each with different thermal characteristics. For each region of the alloy, there is a given amount (expressed in terms of a percentage) of each of the three base metals, that varies up to 25 percent due to random noise. The top left corner (at the mesh element at index [0,0]) is heated at $S$ degrees Celsius and the bottom right corner (index [width - 1,height - 1]) is heated at $T$ degrees Celsius. The temperature at these points may also randomly vary over time.
 
 Your program calculates the final temperature for each region on the piece of alloy. The new temperature for a given region of the alloy is calculated using the formula:
 
@@ -34,4 +34,4 @@ Your program should graphically display the results by drawing a grid of points 
 
 Acknowledgment: This assignment was adapted from a study by Steve MacDonald.
 
-Part B. Reimplement using SIMD parallelism, a GPU, or multiple servers (I decided to use multiple servers via two ServerSockets).
+Part B: Reimplement using SIMD parallelism, a GPU, or multiple servers (I decided to use multiple servers via two ServerSockets).
