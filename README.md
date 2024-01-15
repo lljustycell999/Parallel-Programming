@@ -31,4 +31,4 @@ Your program should graphically display the results by drawing a grid of points 
 
 Acknowledgment: This assignment was adapted from a study by Steve MacDonald.
 
-B. Reimplement using SIMD parallelism, a GPU, or multiple servers.
+B. Reimplement using SIMD parallelism, a GPU, or multiple servers (I decided to use multiple servers via two ServerSockets).
