@@ -1,5 +1,5 @@
 # Parallel Programming
-This repository will contain the three projects completed as part of the CSC 375 - Parallel Programming course at SUNY Oswego taught by Professor Doug Lea.
+This repository will contain the three projects completed as part of a parallel programming course.
 
 # Assignment 1 Specification:
 Write a parallel genetic algorithm program for an Facilities Layout problem in which:
