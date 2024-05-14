@@ -1,5 +1,5 @@
 # Parallel Programming
-This repository will contain the three projects completed as part of a parallel programming course.
+This repository contains the three projects completed as part of a parallel programming course.
 
 # Assignment 1 Specification:
 <img width="1440" alt="Screenshot 2024-05-13 at 11 43 29 PM" src="https://github.com/lljustycell999/Parallel-Programming/assets/123667513/ba4042b5-573f-4972-8605-ae051ec226ef">
